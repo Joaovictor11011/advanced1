@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórum Básico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Anúncio no topo -->
+        <div class="ad-banner">
+            <img src="https://poderdomarketing.com/wp-content/uploads/2021/01/pegue-seu-cupom-google-ads-r100-e1617623884902.png" alt="Anúncio" width="742" height="200">
+        </div>
+
+        <header>
+            <h1>Fórum Básico</h1>
+            <nav>
+                <a href="#" onclick="toggleForm('newTopicForm')">Criar Novo Tópico</a> | 
+                <a href="#" onclick="toggleForm('registerForm')">Criar Conta</a>
+            </nav>
+        </header>
+
+        <section id="forumTopics">
+            <h2>Tópicos Recentes</h2>
+            <!-- Tópicos serão inseridos aqui via JavaScript -->
+        </section>
+
+        <!-- Formulário para criar novo tópico -->
+        <section id="newTopicForm" class="form" style="display: none;">
+            <h3>Criar Novo Tópico</h3>
+            <form id="createTopicForm" onsubmit="return createTopic(event)">
+                <label for="topicTitle">Título</label>
+                <input type="text" id="topicTitle" name="topicTitle" required>
+                <label for="topicContent">Conteúdo</label>
+                <textarea id="topicContent" name="topicContent" required></textarea>
+                <button type="submit">Criar Tópico</button>
+            </form>
+        </section>
+
+        <!-- Formulário de Registro -->
+        <section id="registerForm" class="form" style="display: none;">
+            <h3>Criar Conta</h3>
+            <form id="createAccountForm" onsubmit="return createAccount(event)">
+                <label for="username">Nome de usuário</label>
+                <input type="text" id="username" name="username" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Criar Conta</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

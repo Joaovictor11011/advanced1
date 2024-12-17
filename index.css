@@ -1,0 +1,156 @@
+/* Estilos básicos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilo do header */
+header {
+    background-color: #4b2e83; /* Cor de fundo do header em roxo mais forte */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para a seção de tópicos */
+#forumTopics {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#forumTopics h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o anúncio */
+.ad-banner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para os formulários */
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Estilo para os campos de entrada do formulário */
+#newTopicForm input, #newTopicForm textarea, #registerForm input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 4px;
+    border: 1px solid #d1a4e0; /* Roxo claro para bordas */
+    box-sizing: border-box;
+}
+
+#newTopicForm textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Estilo para os botões */
+#newTopicForm button, #registerForm button {
+    background-color: #4b2e83; /* Cor de fundo do botão em roxo mais forte */
+    color: white;
+    padding: 12px 30px; /* Tamanho do botão */
+    border: none;
+    border-radius: 30px; /* Bordas arredondadas */
+    font-size: 1.1em;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombras para dar um efeito de profundidade */
+    transition: all 0.3s ease-in-out; /* Transição suave */
+    display: inline-block;
+    text-align: center;
+}
+
+/* Efeito de hover no botão */
+#newTopicForm button:hover, #registerForm button:hover {
+    background-color: #6f3f99; /* Cor mais escura ao passar o mouse */
+    transform: translateY(-5px); /* Efeito de "elevação" no botão */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+}
+
+/* Efeito de foco no botão (quando o botão é clicado ou selecionado) */
+#newTopicForm button:focus, #registerForm button:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    box-shadow: 0 0 10px #6f3f99; /* Adiciona um brilho ao redor do botão */
+}
+
+/* Estilo para links de navegação */
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o formulário de criação de tópico */
+#newTopicForm, #registerForm {
+    display: none;
+}
+
+/* Estilo para tópicos criados */
+.topic {
+    background-color: #fafafa;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.topic h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+/* Responsividade: ajusta o layout para dispositivos móveis */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #newTopicForm button, #registerForm button {
+        width: 100%; /* Botões em tela cheia em dispositivos móveis */
+    }
+}
